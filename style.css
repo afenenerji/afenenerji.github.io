@@ -1,1 +1,10 @@
-body { scroll-behavior: smooth; }
+
+body { scroll-behavior: smooth; color: #0D0D0D; font-family: sans-serif; }
+header, footer { background-color: #051440; }
+a { color: #0F6CA6; text-decoration: none; }
+a:hover { color: #F29727; }
+button { background-color: #F2A71B; color: #0D0D0D; font-weight: bold; }
+button:hover { background-color: #F29727; }
+h1, h2, h3, h4 { color: #051440; }
+.swiper-button-next, .swiper-button-prev { color: #F2A71B; }
+.swiper-pagination-bullet-active { background-color: #F2A71B; }

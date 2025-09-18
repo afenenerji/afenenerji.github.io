@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AFEN Enerji - Elektrik Altyapı Çözümleri</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AFEN Enerji - Elektrik Altyapı Çözümleri</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans text-gray-800">
-  <header class="bg-gray-900 text-white fixed w-full z-50 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold">AFEN Enerji</h1>
-      <nav>
-        <ul class="flex gap-6">
-          <li><a href="index.html" class="hover:text-yellow-400">Ana Sayfa</a></li>
-          <li><a href="about.html" class="hover:text-yellow-400">Hakkımızda</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-400">İletişim</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section class="bg-[url('https://images.unsplash.com/photo-1581091226825-8f0a99d27f83')] bg-cover bg-center h-[90vh] flex items-center justify-center text-center text-white relative">
-    <div class="bg-black bg-opacity-50 p-10 rounded-xl">
-      <h2 class="text-5xl font-bold mb-4">Elektrik Altyapınız Bizimle Güvende</h2>
-      <p class="text-xl">İnşaattan teslimata kadar modern elektrik çözümleri</p>
-    </div>
-  </section>
-  <section class="py-20 container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-10">Tamamlanan Projelerimiz</h3>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="project1.html">
-            <div class="rounded-xl overflow-hidden shadow-lg">
-              <img src="https://images.unsplash.com/photo-1597009472238-65f01c29d319" class="w-full h-72 object-cover">
-              <div class="p-4 bg-white"><h4 class="font-semibold text-lg">Konut Projesi</h4><p>Modern dairelerde elektrik altyapısı</p></div>
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="project2.html">
-            <div class="rounded-xl overflow-hidden shadow-lg">
-              <img src="https://images.unsplash.com/photo-1596496050219-30a1f5adcbf2" class="w-full h-72 object-cover">
-              <div class="p-4 bg-white"><h4 class="font-semibold text-lg">Ofis Binası</h4><p>Enerji verimli kablolama & sistem kurulumu</p></div>
-            </div>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="project3.html">
-            <div class="rounded-xl overflow-hidden shadow-lg">
-              <img src="https://images.unsplash.com/photo-1623330188319-874fae5b28f3" class="w-full h-72 object-cover">
-              <div class="p-4 bg-white"><h4 class="font-semibold text-lg">Sanayi Tesisi</h4><p>Ağır yük elektrik altyapısı & otomasyon</p></div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-  <footer class="bg-gray-900 text-white py-6 mt-10">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 AFEN Enerji. Tüm hakları saklıdır.</p>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      pagination: { el: ".swiper-pagination", clickable: true },
-      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-      breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
-    });
-  </script>
+<body>
+
+<header class="fixed w-full z-50 shadow-lg text-white">
+<div class="container mx-auto flex justify-between items-center py-4 px-6">
+<h1 class="text-2xl font-bold">AFEN Enerji</h1>
+<nav>
+<ul class="flex gap-6">
+<li><a href="index.html">Ana Sayfa</a></li>
+<li><a href="about.html">Hakkımızda</a></li>
+<li><a href="contact.html">İletişim</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="bg-[url('images/hero.jpg')] bg-cover bg-center h-[90vh] flex items-center justify-center text-center text-white relative">
+<div class="bg-black bg-opacity-50 p-10 rounded-xl">
+<h2 class="text-5xl font-bold mb-4">Elektrik Altyapınız Bizimle Güvende</h2>
+<p class="text-xl">İnşaattan teslimata kadar modern elektrik çözümleri</p>
+</div>
+</section>
+
+<section class="py-20 container mx-auto px-6">
+<h3 class="text-3xl font-bold text-center mb-10">Tamamlanan Projelerimiz</h3>
+<div class="swiper mySwiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><a href="project1.html"><div class="rounded-xl overflow-hidden shadow-lg"><img src="images/project1.jpg" alt="Konut Projesi" class="w-full h-72 object-cover"><div class="p-4 bg-white"><h4>Konut Projesi</h4><p>Modern dairelerde elektrik altyapısı</p></div></div></a></div>
+<div class="swiper-slide"><a href="project2.html"><div class="rounded-xl overflow-hidden shadow-lg"><img src="images/project2.jpg" alt="Ofis Binası" class="w-full h-72 object-cover"><div class="p-4 bg-white"><h4>Ofis Binası</h4><p>Enerji verimli kablolama & sistem kurulumu</p></div></div></a></div>
+<div class="swiper-slide"><a href="project3.html"><div class="rounded-xl overflow-hidden shadow-lg"><img src="images/project3.jpg" alt="Sanayi Tesisi" class="w-full h-72 object-cover"><div class="p-4 bg-white"><h4>Sanayi Tesisi</h4><p>Ağır yük elektrik altyapısı & otomasyon</p></div></div></a></div>
+</div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
+</div>
+</section>
+
+<footer class="py-6 mt-10 text-white">
+<div class="container mx-auto text-center flex justify-center gap-6 items-center">
+<p>&copy; 2025 AFEN Enerji. Tüm hakları saklıdır.</p>
+<a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" class="w-6 h-6" alt="Instagram"></a>
+<a href="https://tiktok.com" target="_blank"><img src="images/tiktok.svg" class="w-6 h-6" alt="TikTok"></a>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {slidesPerView:1, spaceBetween:20, loop:true,
+pagination:{ el: ".swiper-pagination", clickable:true },
+navigation:{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+breakpoints:{768:{slidesPerView:2},1024:{slidesPerView:3}}});
+</script>
 </body>
 </html>
